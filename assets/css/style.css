@@ -2704,4 +2704,73 @@ img {
 .contact-content {
     margin-bottom: 50px;
 }
+/* mobile footer*/
+.row.footer-wrapper.no_2{
+    display: none;
+}
+
+.row.no_2 .mobile{
+    display: none;
+}
+.row.no_2 .label-title{
+    display: inline-flex;
+    width:100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.row.no_2 i{
+    font-size: 22px;
+    color: white;
+}
+#check-contact:checked~.footer-contact{
+    display: block;
+}
+#check-link:checked~ .footer-list{
+    display: block;
+}
+#check-opening:checked~ .footer-opening-hour{
+    display: block;
+}
+#check-sub:checked ~.footer-newsletter{
+    display: block;
+}
+ /* mobile nav  */
+ .nav-overplay{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.333);
+    display: none;
+}
+.nav-mobile{
+    position: fixed;
+    top:0;
+    right: 0;
+    bottom: 0;
+    width: 300px;
+    max-width: 100%;
+    background-color: white;
+    color: black;
+    transform: translateX(100%);
+    transition: transform 1s;
+    display: none;
+}
+#nav-check:checked~.nav-mobile{
+    transform: translateX(0);
+}
+#nav-check:checked ~ .nav-overplay{
+    display: block;
+}
+.open-nav{
+    display: none;
+}
+.list-bars{
+    display: none;
+}
+.list-bars .mobile-menu-link{
+    align-items: center;
+}
 
